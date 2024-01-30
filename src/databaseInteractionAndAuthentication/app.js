@@ -2,11 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const routes = require('./router');
-// const { MongoClient, ServerApiVersion } = require('mongodb');
+const pkg = require('../../package.json')
 
 const app = express();
 
-const mongoURI = "mongodb+srv://bilawal:extra1010@cluster0.guvx3.mongodb.net/Crud?retryWrites=true&w=majority";
+const mongoURI = `mongodb+srv://bilawal:${pkg.dbPassword}@cluster0.guvx3.mongodb.net/Crud?retryWrites=true&w=majority`;
 
 try {
   // Connect to the MongoDB cluster
