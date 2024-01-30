@@ -1,0 +1,81 @@
+===========================
+User Manual: Running the Questions
+===========================
+
+**Table of Contents:**
+
+1. Introduction
+2. Setting Up the Project
+3. Running the Questions
+   a. Asynchronous Operations
+   b. Error Handling
+   c. File System Operations
+   d. Database Interaction
+   e. Authentication
+4. Troubleshooting
+5. Contact Information
+
+===========================
+1. Introduction
+===========================
+
+This user manual provides instructions on setting up and running the questions in this project.
+
+===========================
+2. Setting Up the Project
+===========================
+
+- Clone the project repository from https://github.com/bilawal-cyber/Assesments.git.
+
+- Clone the postman repository from https://api.postman.com/collections/15288499-0168127c-6a5a-4644-ab0e-665ef0709810?access_key=PMAT-01HND9RTRCPYBT9F4YV54TWYFN
+
+- Install Node.js and npm on your machine if not already installed.
+
+- Open a terminal and navigate to the project directory.
+
+- Run the command `npm install` to install project dependencies.
+
+===========================
+3. Running the Questions
+===========================
+
+a. **Asynchronous Operations:**
+
+   - Open the file `src/asyncOperations/downloadContents.js`.
+
+   - Replace the dummy URLs in the `urls` array with your actual URLs.
+
+   - Run the command `node src/asyncOperations/downloadContents.js` to execute the script.
+
+b. **Error Handling:**
+
+   - Open the file `src/errorHandling/fetchDataWithErrors.js`.
+
+   - Review the code and ensure that the API endpoint is correct.
+
+   - Run the command `node src/errorHandling/fetchDataWithErrors.js` to execute the script.
+
+c. **File System Operations:**
+
+   - Open the file `src/fileSystemOperations/listFilesByExtension.js`.
+
+   - Replace the dummy extension in the `extension` variable with your desired file extension.
+
+   - Run the command `node src/fileSystemOperations/listFilesByExtension.js` to execute the script.
+
+
+d. **Authentication:**
+
+   - Open the file `src/routes/authenticationRoutes.js` to review authentication routes.
+
+   - Edit `src/controllers/loginController.js` to customize the login logic.
+
+   - Run the command `node app.js` to start the server.
+
+e. **Database Interaction:**
+
+   - Open the file `src/databaseInteractionAndAuthentication/app.js` to review server setup.
+
+   - Explore `src/databaseInteractionAndAuthentication/userController.js` for database utility functions.
+
+   - Run the command `node app.js` to start the server.
