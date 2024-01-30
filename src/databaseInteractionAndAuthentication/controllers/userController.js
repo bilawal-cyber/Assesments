@@ -1,5 +1,5 @@
 // controllers.js
-const User = require('./modals/User');
+const User = require('../modals/User');
 
 const getAllUsers = async (req, res) => {
   try {
